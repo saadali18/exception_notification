@@ -91,7 +91,7 @@ module ExceptionNotifier
       text = []
 
       text << '```'
-      backtrace.first(3).each { |line| text << "* #{line}" }
+      backtrace.first(20).each { |line| text << "* #{line}" }
       text << '```'
 
       text.join("\n")
